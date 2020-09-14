@@ -7,7 +7,7 @@ node {
     }
 
      stage('maven 打包jenkins-demo'){
-            sh "mvn -f jenkins-demo clean install -Dmaven.test.skip=true"
+            sh "mvn  clean install -Dmaven.test.skip=true"
         }
 
       stage('harbor拉取镜像，启动容器'){
